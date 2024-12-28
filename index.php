@@ -13,7 +13,7 @@ echo sum1(3, 5);
 function sum2 (int $x, int $y) : int { // the funtion return and take int type data.
     return $x + $y;
 }
-echo sum2(3.6, 5);
+echo sum2(3, 5);
 
 
  
@@ -39,6 +39,18 @@ function sum5 (int | float $x, int | float $y) : void { // the funtion will not 
     return ;
 }
 echo sum5(3, 5);
+
+
+
+
+// mixed means to the all data types of php 
+
+function sum6 (mixed $x, mixed $y) : mixed { // the funtion will return and take any type of value
+    $z = $x + $y;
+    return $z;
+}
+echo sum6(3, 5);
+echo sum6(3.898, '5');
 
 
 
