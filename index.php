@@ -54,4 +54,26 @@ echo sum6(3.898, '5');
 
 
 
+
+
+// nullable means null value
+
+function my_name1 ( string|null $name) :string|null {
+    return $name;
+}
+$naming1 = 'Jual Rana';
+// echo my_name("Jual Rana"); // Jual Rana
+echo my_name1($naming1); // if was not used ? or |null return will eat error.....
+
+// or 
+
+function my_name2 ( ?string $name) :?string { // short form null is ? sign
+    return $name;
+}
+$naming2 = null;
+// echo my_name2("Jual Rana"); // Jual Rana
+echo my_name2($naming2); // if was not used ? or |null return will eat error.....
+
+
+
 ?>
